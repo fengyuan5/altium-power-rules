@@ -1,0 +1,31 @@
+{
+  "fabrication": {
+    "min_trace_mm": 0.15,
+    "min_clearance_mm": 0.15,
+    "via_drill_mm": 0.30,
+    "via_dia_mm": 0.60,
+    "via_imax_a": 1
+  },
+  "power_nets": [
+    {
+      "name": "VIN",
+      "class": "PWR_HIGH",
+      "imax_a": 8,
+      "width_min_mm": 7.2,
+      "width_pref_mm": 9.0,
+      "width_max_mm": 12.0
+    },
+    {
+      "name": "VOUT",
+      "class": "PWR_HIGH",
+      "imax_a": 8,
+      "width_min_mm": 7.2,
+      "width_pref_mm": 9.0,
+      "width_max_mm": 12.0
+    }
+  ],
+  "special_nets": [
+    { "name": "SW", "class": "SWITCH" },
+    { "name": "FB", "class": "SENSE" }
+  ]
+}

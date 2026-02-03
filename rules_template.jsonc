@@ -1,0 +1,33 @@
+{
+  // fabrication.*：工艺与制造限制（线宽、间距、过孔）
+  "fabrication": {
+    "min_trace_mm": 0.0,
+    "min_clearance_mm": 0.0,
+    "via_drill_mm": 0.0,
+    "via_dia_mm": 0.0,
+    "via_imax_a": 1
+  },
+  // power_nets[]：电源网络清单（名称、电流、线宽）
+  "power_nets": [
+    {
+      "name": "",
+      "class": "PWR_HIGH",
+      "imax_a": 0,
+      "width_min_mm": 0.0,
+      "width_pref_mm": 0.0,
+      "width_max_mm": 0.0
+    }
+  ],
+  // special_nets[]：特殊网络（开关节点、反馈/敏感网）
+  "special_nets": [
+    { "name": "", "class": "SWITCH" },
+    { "name": "", "class": "SENSE" }
+  ],
+  // grounds.connect_style：地网络铜皮连接方式（直连/热焊盘）
+  "grounds": {
+    "connect_style": {
+      "PGND": "direct",
+      "AGND": "thermal"
+    }
+  }
+}
